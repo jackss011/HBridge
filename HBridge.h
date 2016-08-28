@@ -5,16 +5,15 @@
 
 class HBridge
 {
-	private:
+private:
 	int pin_enable;
 	int pin_a;
 	int pin_b;
-	
-	public:
+
+public:
 	HBridge();
-	void init(int _enable, int _a, int _b);
-	void update(int _value);
-	
+	void init(int enable, int a, int b);
+	void update(int value);
 };
 
 #endif
