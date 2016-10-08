@@ -4,7 +4,7 @@ This arduino library provides an easy way to control an H-Bridge IC
 <h2> How to use </h2>
 
 <h3> Basics </h3>
-<p>This library provide a <code>HBridge</code> class to control the IC. Member functions are described below.</p>
+<p>This library provides a <code>HBridge</code> class to control the IC. Member functions are described below.</p>
 
 <h3> Initialization </h3>
 <p>Initialize the H bridge using <code>init(enable pin, input 1, input 2)</code>.</p>
