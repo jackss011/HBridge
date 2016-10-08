@@ -1,19 +1,20 @@
 # HBridge
-Arduino library which provides facilities to use an H bridge
+This arduino library provides an easy way to control an H-Bridge IC
 
---HOW TO USE--
+<h2> How to use </h2>
 
-initialize
-  initialize the H bridge using init(enable pin, input 1, input 2);
+<h3> Initialization </h3>
+<p>Initialize the H bridge using <code>init(enable pin, input 1, input 2)</code></p>
   
-usage
-  update the value of the H bridge using update(value)
+<h3> Usage </h3>
+<p>
+  Control the H-Bridge using <code>Update(int value)</code>
   
-  value: 
-  goes from -255, 255. 
-  positive value will make spin the motor in the opposite direction of negative
-  the greater the absolute value is the faster the motor will spin
+  <h4>@param <em>value</em></h4>
+  <p>Range from -255 to 255</p>
+  <p>The sign of <em>value</em> indicates the motor's spin direction. The absolute value is the motor's spin velocity
+</p>
   
-tips
-  invert input 1 and input 2 on init(input 1, input 2) if the direction that you want is wrong
-  use map() to map your value's range into update()'s range     es-> update(map(myInput, myMin, myMax, -255, 255))
+<h3> Tips </h3>
+<p>Invert input 1 and input 2 on <code>init(input 1, input 2)</code> if you want to reverse the spin direction<p/>
+<p>Use <code>map()</code> to map your value range into <code>update()</code> range if they are different</p>
